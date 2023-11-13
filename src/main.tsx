@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+import { Example } from '@components';
+
 import styles from './main.module.scss';
 
 function App() {
   return (
     <div className={styles.main}>
-      <h1>Hello World</h1>
+      <Example />
     </div>
   );
 }
