@@ -39,3 +39,4 @@ src
 1. The filename should always be in kebab case. For example, `src/components/my-map`.
 2. Each component directory should contain at least a component definition module (`[comp-name]/[comp-name].tsx`), an SCSS stylesheet (`[comp-name]/[comp-name].module.scss`), and an export entry (`index.ts`).
 3. Always remember to add an export to the main entry of the collection when adding modules into it. Typically, we use `export * from './[module-name]'` to export all contents from the module, but you can also specify the named exports via `export { something } from './[module-name]'`.
+4. Prefer importing from the path aliases. For example, use `import { something } from '@components'` instead of `import { something } from '../components'`
