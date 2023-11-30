@@ -13,7 +13,7 @@ export function Map() {
 
   return (
     <MapGL
-      mapboxAccessToken={import.meta.env.VITE_MAPBOX_ACCESS_TOKEN}
+      mapboxAccessToken='pk.eyJ1IjoiZG9scGhpbi13b29kIiwiYSI6ImNscGszcmljZDA0dTgybm5xN2RxNXJqN2YifQ.Haq-yMvkr9P7xc_0eG3gsA'
       initialViewState={{
         // Atlanta metropolitan area
         longitude: -84.3643,
