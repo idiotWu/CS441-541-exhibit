@@ -1,19 +1,7 @@
 import type { EventMarker } from '@interfaces';
 
+// events should be sorted by date in ascending order
 export const eventMarkers: EventMarker[] = [
-  {
-    event: 'Stop Cop City!',
-    date: 'Decemeber 2, 2023',
-    video: 'videos/stop-cop-city.mov',
-    organization: 'Atlanta DSA',
-    url: 'https://atldsa.org/stopcopcity/',
-    description:
-      "Atlanta's ruling class wants to demolish our public forests to build a $90,000,000 Cop City. Let's stop them!",
-    // TODO: find accurate location
-    longitude: -84.3643,
-    latitude: 33.7039,
-    color: '#274c77',
-  },
   {
     event: 'Tell Corporations to Divest from Cop City!',
     date: 'Today',
@@ -28,5 +16,18 @@ We demand these universities end all financial support to the Atlanta Police Fou
     longitude: -84.4070478,
     latitude: 33.7334532,
     color: '#9a031e',
+  },
+  {
+    event: 'Stop Cop City!',
+    date: 'Decemeber 2, 2023',
+    video: 'videos/stop-cop-city.mov',
+    organization: 'Atlanta DSA',
+    url: 'https://atldsa.org/stopcopcity/',
+    description:
+      "Atlanta's ruling class wants to demolish our public forests to build a $90,000,000 Cop City. Let's stop them!",
+    // TODO: find accurate location
+    longitude: -84.3643,
+    latitude: 33.7039,
+    color: '#274c77',
   },
 ];
