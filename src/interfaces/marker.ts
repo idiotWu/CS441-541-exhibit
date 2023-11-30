@@ -7,4 +7,5 @@ export type EventMarker = {
   description: string;
   longitude: number;
   latitude: number;
+  color: string;
 };

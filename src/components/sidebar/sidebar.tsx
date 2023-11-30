@@ -1,4 +1,5 @@
 import { useSetAtom } from 'jotai';
+import Divider from '@mui/material/Divider';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -7,7 +8,7 @@ import ListItemText from '@mui/material/ListItemText';
 import RoomIcon from '@mui/icons-material/Room';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { useMap } from 'react-map-gl';
-import { useState, useCallback } from 'react';
+import { useState, useCallback, Fragment } from 'react';
 import { clsx } from 'clsx';
 
 import { activeMarkerAtom } from '@atoms';
@@ -48,16 +49,21 @@ export function Sidebar() {
       >
         <ChevronLeftIcon className={styles.icon} />
       </span>
+      <h4 className={styles.sidebarTitle}>Upcoming Events</h4>
       <List className={styles.eventList}>
         {eventMarkers.map(m => (
-          <ListItem key={m.event} disablePadding>
-            <ListItemButton onClick={() => handleClick(m)}>
-              <ListItemIcon>
-                <RoomIcon />
-              </ListItemIcon>
-              <ListItemText primary={m.event} />
-            </ListItemButton>
-          </ListItem>
+          <Fragment key={m.event}>
+            <Divider />
+
+            <ListItem disablePadding>
+              <ListItemButton onClick={() => handleClick(m)}>
+                <ListItemIcon>
+                  <RoomIcon style={{ color: m.color }} fontSize='large' />
+                </ListItemIcon>
+                <ListItemText primary={m.event} />
+              </ListItemButton>
+            </ListItem>
+          </Fragment>
         ))}
       </List>
     </aside>

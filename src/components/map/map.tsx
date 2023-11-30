@@ -33,7 +33,10 @@ export function Map() {
           key={m.event}
         >
           <div className={styles.marker}>
-            <RoomIcon className={styles.markerIcon} />
+            <RoomIcon
+              className={styles.markerIcon}
+              style={{ color: m.color }}
+            />
             <span className={styles.markerLabel}>{m.event}</span>
           </div>
         </Marker>

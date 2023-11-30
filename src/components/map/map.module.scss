@@ -6,7 +6,8 @@
 
   &:hover {
     .marker-icon {
-      color: #780000;
+      // color: #780000;
+      opacity: 1;
     }
 
     .marker-label {
@@ -16,9 +17,10 @@
 }
 
 .marker-icon {
-  color: #c1121f;
+  // color: #c1121f;
   // enlarge icon (default: 24x24)
   transform: scale(2);
+  opacity: 0.8;
 }
 
 .marker-label {

@@ -12,6 +12,7 @@ export const eventMarkers: EventMarker[] = [
     // TODO: find accurate location
     longitude: -84.3643,
     latitude: 33.7039,
+    color: '#274c77',
   },
   {
     event: 'Tell Corporations to Divest from Cop City!',
@@ -26,5 +27,6 @@ We demand these universities end all financial support to the Atlanta Police Fou
 `,
     longitude: -84.4070478,
     latitude: 33.7334532,
+    color: '#9a031e',
   },
 ];

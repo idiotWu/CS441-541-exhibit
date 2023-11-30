@@ -1,4 +1,4 @@
-import { Modal, Skeleton, Button } from '@mui/material';
+import { Modal, Button } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import Markdown from 'react-markdown';
 import { useAtom } from 'jotai';
