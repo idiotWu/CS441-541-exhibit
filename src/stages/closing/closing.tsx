@@ -4,7 +4,7 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 
 import { STAGE } from '@constants';
 import { currentStageAtom } from '@atoms';
-import { BottomNav } from '@components';
+import { BottomNav, FullscreenVideo } from '@components';
 
 import styles from './closing.module.scss';
 
@@ -13,11 +13,7 @@ export function Closing() {
 
   return (
     <>
-      <video
-        src=''
-        // autoPlay
-        className={styles.video}
-      />
+      <FullscreenVideo src='' autoPlay />
 
       <BottomNav alwaysShow>
         <div className={styles.nav}>

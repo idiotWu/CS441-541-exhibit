@@ -7,13 +7,13 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 import { STAGE } from '@constants';
 import { currentStageAtom } from '@atoms';
-import { BottomNav } from '@components';
+import { BottomNav, FullscreenVideo, type VideoHandler } from '@components';
 
 import styles from './opening.module.scss';
 
 export function Opening() {
   const [showOverlay, setShowOverlay] = useState(true);
-  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const videoRef = useRef<VideoHandler | null>(null);
   const setCurrentStage = useSetAtom(currentStageAtom);
 
   return (
@@ -38,11 +38,7 @@ export function Opening() {
         )}
       </AnimatePresence>
 
-      <video
-        src='videos/introduction_x265.mp4'
-        className={styles.video}
-        ref={videoRef}
-      />
+      <FullscreenVideo src='videos/introduction_x265.mp4' ref={videoRef} />
 
       {!showOverlay && (
         <BottomNav>
