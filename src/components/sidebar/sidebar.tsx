@@ -1,24 +1,25 @@
-import { useSetAtom } from 'jotai';
+import { useSetAtom, useAtomValue } from 'jotai';
 import Divider from '@mui/material/Divider';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import RoomIcon from '@mui/icons-material/Room';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { useMap } from 'react-map-gl';
 import { useState, useCallback, Fragment } from 'react';
 import { clsx } from 'clsx';
 
-import { activeMarkerAtom } from '@atoms';
+import { activeMarkerAtom, viewedVideosAtom } from '@atoms';
 import { eventMarkers } from '@constants';
 import type { EventMarker } from '@interfaces';
+import { MarkerIcon } from '@components';
 
 import styles from './sidebar.module.scss';
 
 export function Sidebar() {
   const setActiveMarker = useSetAtom(activeMarkerAtom);
+  const viewedVideos = useAtomValue(viewedVideosAtom);
   const [open, setOpen] = useState(true);
   const { current: map } = useMap();
 
@@ -58,7 +59,7 @@ export function Sidebar() {
             <ListItem disablePadding>
               <ListItemButton onClick={() => handleClick(m)}>
                 <ListItemIcon>
-                  <RoomIcon style={{ color: m.color }} fontSize='large' />
+                  <MarkerIcon color={m.color} checked={viewedVideos.has(m)} />
                 </ListItemIcon>
                 <ListItemText primary={m.event} />
               </ListItemButton>

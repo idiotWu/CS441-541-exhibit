@@ -3,12 +3,13 @@ import CloseIcon from '@mui/icons-material/Close';
 import Markdown from 'react-markdown';
 import { useAtom } from 'jotai';
 import { useState, useCallback, useEffect } from 'react';
-import { activeMarkerAtom } from '@atoms';
+import { activeMarkerAtom, viewedVideosAtom } from '@atoms';
 
 import styles from './video-modal.module.scss';
 
 export function VideoModal() {
   const [activeMarker, setActiveMarker] = useAtom(activeMarkerAtom);
+  const [, setViewedVideos] = useAtom(viewedVideosAtom);
   const [open, setOpen] = useState(activeMarker !== null);
 
   const handleClose = useCallback(() => {
@@ -17,8 +18,15 @@ export function VideoModal() {
   }, [setActiveMarker]);
 
   useEffect(() => {
-    setOpen(activeMarker !== null);
-  }, [activeMarker]);
+    if (!activeMarker) {
+      setOpen(false);
+      return;
+    }
+
+    setOpen(true);
+
+    setViewedVideos(v => new Set([activeMarker, ...v]));
+  }, [activeMarker, setViewedVideos]);
 
   return (
     <Modal open={open} onClose={handleClose}>

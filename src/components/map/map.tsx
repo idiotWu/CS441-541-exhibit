@@ -1,15 +1,15 @@
-import { useSetAtom } from 'jotai';
+import { useSetAtom, useAtomValue } from 'jotai';
 import MapGL, { Marker } from 'react-map-gl';
-import RoomIcon from '@mui/icons-material/Room';
 
 import { eventMarkers } from '@constants';
-import { activeMarkerAtom } from '@atoms';
-import { VideoModal, Sidebar } from '@components';
+import { activeMarkerAtom, viewedVideosAtom } from '@atoms';
+import { VideoModal, Sidebar, MarkerIcon } from '@components';
 
 import styles from './map.module.scss';
 
 export function Map() {
   const setActiveMarker = useSetAtom(activeMarkerAtom);
+  const viewedVideos = useAtomValue(viewedVideosAtom);
 
   return (
     <MapGL
@@ -33,9 +33,10 @@ export function Map() {
           key={m.event}
         >
           <div className={styles.marker}>
-            <RoomIcon
+            <MarkerIcon
               className={styles.markerIcon}
-              style={{ color: m.color }}
+              color={m.color}
+              checked={viewedVideos.has(m)}
             />
             <span className={styles.markerLabel}>{m.event}</span>
           </div>

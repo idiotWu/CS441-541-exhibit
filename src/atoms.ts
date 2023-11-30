@@ -5,3 +5,5 @@ import type { EventMarker } from '@interfaces';
 export const activeMarkerAtom = atom<EventMarker | null>(null);
 
 export const currentStageAtom = atom<STAGE>(STAGE.OPENING);
+
+export const viewedVideosAtom = atom(new Set<EventMarker>());
