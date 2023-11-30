@@ -38,7 +38,11 @@ export function Opening() {
         )}
       </AnimatePresence>
 
-      <FullscreenVideo src='videos/introduction.mp4' ref={videoRef} />
+      <FullscreenVideo
+        src='videos/introduction.mp4'
+        ref={videoRef}
+        onEnded={() => setCurrentStage(STAGE.INTERACTIVE_MAP)}
+      />
 
       {!showOverlay && (
         <BottomNav>
