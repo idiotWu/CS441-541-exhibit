@@ -38,7 +38,7 @@ export function Opening() {
         )}
       </AnimatePresence>
 
-      <FullscreenVideo src='videos/introduction_x265.mp4' ref={videoRef} />
+      <FullscreenVideo src='videos/introduction.mp4' ref={videoRef} />
 
       {!showOverlay && (
         <BottomNav>
