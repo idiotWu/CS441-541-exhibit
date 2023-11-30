@@ -17,8 +17,8 @@ export function Map() {
       initialViewState={{
         // Atlanta metropolitan area
         longitude: -84.3643,
-        latitude: 33.7539,
-        zoom: 10,
+        latitude: 33.7139,
+        zoom: 12,
         bearing: 0,
         pitch: 0,
       }}

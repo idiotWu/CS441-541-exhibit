@@ -1,5 +1,6 @@
 import { Modal, Skeleton, Button } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
+import Markdown from 'react-markdown';
 import { useAtom } from 'jotai';
 import { useState, useCallback, useEffect } from 'react';
 import { activeMarkerAtom } from '@atoms';
@@ -27,23 +28,18 @@ export function VideoModal() {
           className={styles.closeButton}
           onClick={handleClose}
         />
-        <h2 className={styles.modalTitle}>{activeMarker?.organization}</h2>
+        <h2 className={styles.modalTitle}>{activeMarker?.event}</h2>
         <div className={styles.modalContent}>
           <div className={styles.video}>
-            <Skeleton
-              variant='rectangular'
-              animation='wave'
-              width='100%'
-              height='90%'
-            />
-            video player goes here...
+            {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+            <video src={activeMarker?.video} controls autoPlay></video>
           </div>
           <aside className={styles.sidebar}>
-            <h4 className={styles.eventName}>{activeMarker?.event}</h4>
+            <h4 className={styles.eventName}>{activeMarker?.organization}</h4>
             <time className={styles.eventDate}>{activeMarker?.date}</time>
-            <p className={styles.eventDescription}>
+            <Markdown className={styles.eventDescription}>
               {activeMarker?.description}
-            </p>
+            </Markdown>
             {/* @ts-expect-error: target property does exist */}
             <Button
               className={styles.registerButton}
@@ -51,7 +47,7 @@ export function VideoModal() {
               variant='contained'
               target='_blank'
             >
-              Register Now!
+              I'm in!
             </Button>
           </aside>
         </div>
