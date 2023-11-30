@@ -1,0 +1,36 @@
+.sidebar {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 250px;
+  transform: translate3d(250px, -50%, 0);
+  border-radius: 0 0 0 4px;
+  background: #fff;
+  transition: transform 0.3s;
+
+  &.open {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  color: #fff;
+  background: #1976d2;
+  border-radius: 4px 0 0 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background: #1565c0;
+  }
+
+  &.open .icon {
+    transform: rotateZ(180deg);
+  }
+}

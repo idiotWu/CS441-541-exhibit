@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import { Example } from '@components';
+import { Map } from '@components';
+
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 import styles from './main.module.scss';
 
 function App() {
   return (
-    <div className={styles.main}>
-      <Example />
-    </div>
+    <main className={styles.main}>
+      <Map />
+    </main>
   );
 }
 
