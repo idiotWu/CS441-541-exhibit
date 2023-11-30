@@ -4,6 +4,7 @@ export const eventMarkers: EventMarker[] = [
   {
     event: 'Stop Cop City!',
     date: 'Decemeber 2, 2023',
+    video: 'video_name.mp4',
     organization: 'Atlanta DSA',
     url: 'https://atldsa.org/stopcopcity/',
     description:
