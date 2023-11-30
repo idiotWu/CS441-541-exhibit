@@ -61,7 +61,7 @@ export function Sidebar() {
                 <ListItemIcon>
                   <MarkerIcon color={m.color} checked={viewedVideos.has(m)} />
                 </ListItemIcon>
-                <ListItemText primary={m.event} />
+                <ListItemText primary={m.event} secondary={m.date} />
               </ListItemButton>
             </ListItem>
           </Fragment>
