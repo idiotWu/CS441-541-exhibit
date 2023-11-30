@@ -1,0 +1,5 @@
+export enum STAGE {
+  OPENING,
+  INTERACTIVE_MAP,
+  CLOSING,
+}

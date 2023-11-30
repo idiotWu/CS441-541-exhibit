@@ -1,0 +1,43 @@
+.overlay {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.75);
+
+  h1 {
+    font-size: 60px;
+    color: #fff;
+  }
+
+  button {
+    color: #fff;
+    font-size: 32px;
+    letter-spacing: 2px;
+    border-color: #fff;
+
+    &:hover {
+      border-color: #aaa;
+    }
+  }
+}
+
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}

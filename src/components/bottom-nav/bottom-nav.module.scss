@@ -1,0 +1,17 @@
+.nav {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  z-index: 10;
+  pointer-events: none;
+  will-change: opacity;
+  transition: opacity 0.3s ease-in-out;
+
+  &.show,
+  &:hover {
+    pointer-events: initial;
+    opacity: 0.99;
+  }
+}

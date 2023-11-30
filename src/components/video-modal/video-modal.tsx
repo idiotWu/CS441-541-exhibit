@@ -31,7 +31,6 @@ export function VideoModal() {
         <h2 className={styles.modalTitle}>{activeMarker?.event}</h2>
         <div className={styles.modalContent}>
           <div className={styles.video}>
-            {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
             <video src={activeMarker?.video} controls autoPlay></video>
           </div>
           <aside className={styles.sidebar}>

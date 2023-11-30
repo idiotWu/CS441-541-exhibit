@@ -14,8 +14,7 @@ module.exports = {
     // not compatible with monorepos (when listing commen dependecies in the root package.json)
     'import/no-extraneous-dependencies': 'off',
 
-    // compatibility with lexical playground
-    // consider removing some of these rules later
+    'jsx-a11y/media-has-caption': 'off',
     'react/destructuring-assignment': 'off',
     'react/button-has-type': 'off',
     'react/style-prop-object': 'off',

@@ -25,6 +25,7 @@
       "@interfaces": ["src/interfaces"],
       "@constants": ["src/constants"],
       "@atoms": ["src/atoms"],
+      "@stages": ["src/stages"],
       "@assets/*": ["src/assets/*"]
     }
   },
