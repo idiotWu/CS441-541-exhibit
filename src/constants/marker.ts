@@ -32,7 +32,8 @@ We demand these universities end all financial support to the Atlanta Police Fou
   {
     event: 'The Movement to End Mass Incarceration',
     date: 'December 14, 2023',
-    video: 'videos/DSA.mp4',
+    // TODO: add video
+    video: '',
     organization: 'Southern Center for Human Rights (SCHR)',
     url: 'https://www.schr.org/take-action/',
     description:
