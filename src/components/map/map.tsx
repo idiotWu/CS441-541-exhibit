@@ -30,7 +30,7 @@ export function Map() {
           longitude={m.longitude}
           onClick={() => setActiveMarker(m)}
           anchor='bottom-left'
-          key={m.event}
+          key={m.organization}
         >
           <div className={styles.marker}>
             <MarkerIcon
@@ -38,7 +38,7 @@ export function Map() {
               color={m.color}
               checked={viewedVideos.has(m)}
             />
-            <span className={styles.markerLabel}>{m.event}</span>
+            <span className={styles.markerLabel}>{m.organization}</span>
           </div>
         </Marker>
       ))}

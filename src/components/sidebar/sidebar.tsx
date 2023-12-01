@@ -50,10 +50,10 @@ export function Sidebar() {
       >
         <ChevronLeftIcon className={styles.icon} />
       </span>
-      <h4 className={styles.sidebarTitle}>Upcoming Events</h4>
+      <h4 className={styles.sidebarTitle}>Organizations</h4>
       <List className={styles.eventList}>
         {eventMarkers.map(m => (
-          <Fragment key={m.event}>
+          <Fragment key={m.organization}>
             <Divider />
 
             <ListItem disablePadding>
@@ -61,7 +61,7 @@ export function Sidebar() {
                 <ListItemIcon>
                   <MarkerIcon color={m.color} checked={viewedVideos.has(m)} />
                 </ListItemIcon>
-                <ListItemText primary={m.event} secondary={m.date} />
+                <ListItemText primary={m.organization} secondary={m.event} />
               </ListItemButton>
             </ListItem>
           </Fragment>
