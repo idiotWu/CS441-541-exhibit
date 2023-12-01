@@ -56,7 +56,7 @@ We demand these universities end all financial support to the Atlanta Police Fou
   },
   {
     event: '"Stop Cop City!" Movement',
-    date: 'Decemeber 2, 2023',
+    date: 'Today',
     video: 'videos/stop-cop-city.mov',
     organization: 'Stop Cop City!',
     url: 'https://stopcop.city/',
