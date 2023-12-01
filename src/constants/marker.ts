@@ -15,7 +15,7 @@ We demand these universities end all financial support to the Atlanta Police Fou
 `,
     longitude: -84.4070478,
     latitude: 33.7334532,
-    color: '#9a031e',
+    color: '#c34b1d',
   },
   {
     event: 'DSA New Member Orientation',
@@ -25,23 +25,21 @@ We demand these universities end all financial support to the Atlanta Police Fou
     url: 'https://www.atldsa.org/join/',
     description:
       'Atlanta DSA is an entirely volunteer-run, member-driven organization. We make decisions democratically in our monthly membership meetings, which are open to all. ',
-    // TODO: find accurate location
     longitude: -84.4107494,
     latitude: 33.7261626,
-    color: '#274c77',
+    color: '#ec1f27',
   },
   {
     event: 'The Movement to End Mass Incarceration',
-    date: 'December 14th @3pm EST',
+    date: 'December 14, 2023',
     video: 'videos/DSA.mp4',
     organization: 'Southern Center for Human Rights (SCHR)',
     url: 'https://www.schr.org/take-action/',
     description:
       'The Importance of Centering the Voices, Experience & Leadership of Formerly Incarcerated People',
-    // TODO: find accurate location
-    longitude: -84.3906881,
-    latitude: 33.7561844,
-    color: '#274c77',
+    longitude: -84.3934186,
+    latitude: 33.7561442,
+    color: '#fb8500',
   },
   {
     event:
@@ -52,22 +50,20 @@ We demand these universities end all financial support to the Atlanta Police Fou
     url: 'https://columbiauniversity.zoom.us/webinar/register/WN_A1n4JSLZTlmJ5apzj6HZFA#/registration',
     description:
       'Provide for community information and education sessions on the issues of the youth and criminal justice systems',
-    // TODO: find accurate location
-    longitude: -84.2993149,
-    latitude: 33.7463858,
-    color: '#274c77',
+    longitude: -84.3022857,
+    latitude: 33.7463465,
+    color: '#c8d700',
   },
   {
-    event: 'Stop Cop City!',
+    event: '"Stop Cop City!" Movement',
     date: 'Decemeber 2, 2023',
     video: 'videos/stop-cop-city.mov',
-    organization: 'Atlanta DSA',
-    url: 'https://atldsa.org/stopcopcity/',
+    organization: 'Stop Cop City!',
+    url: 'https://stopcop.city/',
     description:
       "Atlanta's ruling class wants to demolish our public forests to build a $90,000,000 Cop City. Let's stop them!",
-    // TODO: find accurate location
-    longitude: -84.4643,
-    latitude: 33.8039,
-    color: '#274c77',
+    longitude: -84.3988567,
+    latitude: 33.7504676,
+    color: '#474662',
   },
 ];

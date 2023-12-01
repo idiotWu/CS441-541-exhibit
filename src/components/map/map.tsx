@@ -16,8 +16,8 @@ export function Map() {
       mapboxAccessToken='pk.eyJ1IjoiZG9scGhpbi13b29kIiwiYSI6ImNscGszcmljZDA0dTgybm5xN2RxNXJqN2YifQ.Haq-yMvkr9P7xc_0eG3gsA'
       initialViewState={{
         // Atlanta metropolitan area
-        longitude: -84.3643,
-        latitude: 33.7139,
+        longitude: -84.3301,
+        latitude: 33.7368,
         zoom: 12,
         bearing: 0,
         pitch: 0,

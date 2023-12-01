@@ -36,13 +36,13 @@ export function VideoModal() {
           className={styles.closeButton}
           onClick={handleClose}
         />
-        <h2 className={styles.modalTitle}>{activeMarker?.event}</h2>
+        <h2 className={styles.modalTitle}>{activeMarker?.organization}</h2>
         <div className={styles.modalContent}>
           <div className={styles.video}>
             <video src={activeMarker?.video} controls autoPlay></video>
           </div>
           <aside className={styles.sidebar}>
-            <h4 className={styles.eventName}>{activeMarker?.organization}</h4>
+            <h4 className={styles.eventName}>{activeMarker?.event}</h4>
             <time className={styles.eventDate}>{activeMarker?.date}</time>
             <Markdown className={styles.eventDescription}>
               {activeMarker?.description}
