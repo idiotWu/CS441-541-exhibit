@@ -14,7 +14,18 @@
   h1 {
     font-size: 60px;
     color: #fff;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
+    background: linear-gradient(
+      45deg,
+      #474662,
+      #c34b1d,
+      #ec1f27,
+      #fb8500,
+      #c8d700
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Permanent Marker', cursive;
   }
 
   button {
@@ -22,6 +33,8 @@
     font-size: 32px;
     letter-spacing: 2px;
     border-color: #fff;
+    // font-family: 'Permanent Marker', cursive;
+    // transform: skew(-15deg);
 
     &:hover {
       border-color: #aaa;
