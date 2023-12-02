@@ -37,8 +37,8 @@ We demand these universities end all financial support to the Atlanta Police Fou
     url: 'https://www.schr.org/upcoming_events/the-movement-to-end-mass-incarceration-the-importance-of-centering-the-voices-experience-leadership-of-formerly-incarcerated-people/',
     description:
       'Join the Southern Center for Human Rights (SCHR) for a discussion with formerly incarcerated leaders about ending mass incarceration, the importance of centering the voices, experiences, and leadership of formerly incarcerated people, and the critical need to prioritize ending the mass incarceration of women and girls.',
-    longitude: -84.3934186,
-    latitude: 33.7561442,
+    longitude: -84.39086765190947,
+    latitude: 33.75612914677257,
     color: '#fb8500',
   },
   {
