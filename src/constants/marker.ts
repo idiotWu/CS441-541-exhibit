@@ -34,7 +34,7 @@ We demand these universities end all financial support to the Atlanta Police Fou
     date: 'December 14, 2023',
     video: 'videos/SCHR.mp4',
     organization: 'Southern Center for Human Rights (SCHR)',
-    url: 'https://www.schr.org/take-action/',
+    url: 'https://www.schr.org/upcoming_events/the-movement-to-end-mass-incarceration-the-importance-of-centering-the-voices-experience-leadership-of-formerly-incarcerated-people/',
     description:
       'The Importance of Centering the Voices, Experience & Leadership of Formerly Incarcerated People',
     longitude: -84.3934186,
