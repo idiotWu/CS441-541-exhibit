@@ -44,4 +44,6 @@
 
 .event-list {
   padding: 0 !important;
+  max-height: calc(100dvh - 60px);
+  overflow: auto;
 }
