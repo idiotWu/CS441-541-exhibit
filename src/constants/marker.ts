@@ -49,7 +49,7 @@ We demand these universities end all financial support to the Atlanta Police Fou
     organization: 'EMI Georgia',
     url: 'https://columbiauniversity.zoom.us/webinar/register/WN_A1n4JSLZTlmJ5apzj6HZFA#/registration',
     description:
-      'Provide for community information and education sessions on the issues of the youth and criminal justice systems',
+      'Based on interviews conducted with low-income Black mothers in Washington, DC, the talk will explore the precarious status of motherhood under conditions of racially unequal systems of surveillance by prisons, police, and child welfare.',
     longitude: -84.3022857,
     latitude: 33.7463465,
     color: '#c8d700',
