@@ -1,5 +1,6 @@
-import { Modal, Button } from '@mui/material';
+import { Modal, Button, Link } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import Markdown from 'react-markdown';
 import { useAtom } from 'jotai';
 import { useState, useCallback, useEffect } from 'react';
@@ -44,7 +45,22 @@ export function VideoModal() {
           <aside className={styles.sidebar}>
             <h4 className={styles.eventName}>{activeMarker?.event}</h4>
             <time className={styles.eventDate}>{activeMarker?.date}</time>
-            <Markdown className={styles.eventDescription}>
+            <Markdown
+              className={styles.eventDescription}
+              components={{
+                a: ({ children, ...props }) => (
+                  // @ts-expect-error: it's safe to use Link here
+                  <Link
+                    {...props}
+                    className={styles.youtubeLink}
+                    target='_blank'
+                  >
+                    <YouTubeIcon />
+                    {children}
+                  </Link>
+                ),
+              }}
+            >
               {activeMarker?.description}
             </Markdown>
             {/* @ts-expect-error: target property does exist */}

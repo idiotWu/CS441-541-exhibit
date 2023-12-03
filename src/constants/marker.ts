@@ -35,8 +35,14 @@ We demand these universities end all financial support to the Atlanta Police Fou
     video: 'videos/SCHR.mp4',
     organization: 'Southern Center for Human Rights (SCHR)',
     url: 'https://www.schr.org/upcoming_events/the-movement-to-end-mass-incarceration-the-importance-of-centering-the-voices-experience-leadership-of-formerly-incarcerated-people/',
-    description:
-      'Join the Southern Center for Human Rights (SCHR) for a discussion with formerly incarcerated leaders about ending mass incarceration, the importance of centering the voices, experiences, and leadership of formerly incarcerated people, and the critical need to prioritize ending the mass incarceration of women and girls.',
+    description: `
+Join the SCHR for a discussion with formerly incarcerated leaders about ending mass incarceration, the importance of centering the voices, experiences, and leadership of formerly incarcerated people, and the critical need to prioritize ending the mass incarceration of women and girls.
+
+**Check out the interviews with SCHR members:**
+
+- [Waleisah S. Wilson](https://youtu.be/j8GkJsJMpdY)
+- [Tanika L. Nicholas](https://youtu.be/TbQ_JLHtHAk)
+`,
     longitude: -84.39086765190947,
     latitude: 33.75612914677257,
     color: '#fb8500',
