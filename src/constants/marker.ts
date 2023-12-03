@@ -38,7 +38,7 @@ We demand these universities end all financial support to the Atlanta Police Fou
     description: `
 Join the SCHR for a discussion with formerly incarcerated leaders about ending mass incarceration, the importance of centering the voices, experiences, and leadership of formerly incarcerated people, and the critical need to prioritize ending the mass incarceration of women and girls.
 
-**Check out the interviews with SCHR members:**
+**Check out our interviews with SCHR members:**
 
 - [Waleisah S. Wilson](https://youtu.be/j8GkJsJMpdY)
 - [Tanika L. Nicholas](https://youtu.be/TbQ_JLHtHAk)
