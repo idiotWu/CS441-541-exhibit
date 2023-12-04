@@ -19,7 +19,15 @@ export function Closing() {
         src='videos/closing.mov'
         autoPlay
         onEnded={() => setShowNav(true)}
-      />
+      >
+        <track
+          label='English'
+          kind='subtitles'
+          srcLang='en'
+          src='captions/closing.vtt'
+          default
+        ></track>
+      </FullscreenVideo>
 
       <BottomNav alwaysShow={showNav}>
         <div className={styles.nav}>

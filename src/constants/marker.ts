@@ -6,6 +6,7 @@ export const eventMarkers: EventMarker[] = [
     event: 'Tell Corporations to Divest from Cop City!',
     date: 'Today',
     video: 'videos/CMB.mov',
+    caption: 'captions/CMB.vtt',
     organization: 'Community Movement Builders',
     url: 'https://campaigns.organizefor.org/petitions/tell-corporations-to-divest-from-cop-city',
     description: `
@@ -23,6 +24,7 @@ Black communities will be especially harmed by the police expansion and militari
     event: 'DSA New Member Orientation',
     date: 'Jan 27th, 2024',
     video: 'videos/DSA.mp4',
+    caption: 'captions/DSA.vtt',
     organization: 'Atlanta DSA',
     url: 'https://www.atldsa.org/join/',
     description: `
@@ -36,6 +38,7 @@ DSA is a volunteer group with many different programs. We campaign to win reform
     event: 'The Movement to End Mass Incarceration',
     date: 'December 14, 2023',
     video: 'videos/SCHR.mp4',
+    caption: 'captions/SCHR.vtt',
     organization: 'Southern Center for Human Rights (SCHR)',
     url: 'https://www.schr.org/upcoming_events/the-movement-to-end-mass-incarceration-the-importance-of-centering-the-voices-experience-leadership-of-formerly-incarcerated-people/',
     description: `
@@ -58,6 +61,7 @@ Join the SCHR for a discussion with formerly incarcerated leaders about ending m
       'Justice Lab speaker series on social science research and justice policy',
     date: 'December 11, 2023',
     video: 'videos/EMI.mp4',
+    caption: 'captions/EMI.vtt',
     organization: 'EMI Georgia',
     url: 'https://columbiauniversity.zoom.us/webinar/register/WN_A1n4JSLZTlmJ5apzj6HZFA#/registration',
     description: `
@@ -71,6 +75,7 @@ Based on interviews conducted with low-income Black mothers in Washington, DC, t
     event: '"Stop Cop City!" Movement',
     date: 'Today',
     video: 'videos/stop-cop-city.mov',
+    caption: 'captions/stop-cop-city.vtt',
     organization: 'Stop Cop City!',
     url: 'https://stopcop.city/',
     description: `

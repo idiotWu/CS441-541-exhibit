@@ -43,7 +43,15 @@ export function Opening() {
         poster='images/opening-preview.png'
         ref={videoRef}
         onEnded={() => setCurrentStage(STAGE.INTERACTIVE_MAP)}
-      />
+      >
+        <track
+          label='English'
+          kind='subtitles'
+          srcLang='en'
+          src='captions/introduction.vtt'
+          default
+        ></track>
+      </FullscreenVideo>
 
       {!showOverlay && (
         <BottomNav>

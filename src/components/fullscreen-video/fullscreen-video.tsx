@@ -12,6 +12,7 @@ import styles from './fullscreen-video.module.scss';
 
 export type VideoHandler = {
   play: () => void;
+  children?: React.ReactNode;
 };
 
 export const FullscreenVideo = forwardRef<

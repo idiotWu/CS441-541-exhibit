@@ -40,7 +40,15 @@ export function VideoModal() {
         <h2 className={styles.modalTitle}>{activeMarker?.organization}</h2>
         <div className={styles.modalContent}>
           <div className={styles.video}>
-            <video src={activeMarker?.video} controls autoPlay></video>
+            <video src={activeMarker?.video} controls autoPlay>
+              <track
+                label='English'
+                kind='subtitles'
+                srcLang='en'
+                src={activeMarker?.caption}
+                default
+              ></track>
+            </video>
           </div>
           <aside className={styles.sidebar}>
             <h4 className={styles.eventName}>{activeMarker?.event}</h4>
