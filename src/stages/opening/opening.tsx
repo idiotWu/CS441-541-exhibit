@@ -40,6 +40,7 @@ export function Opening() {
 
       <FullscreenVideo
         src='videos/introduction.mp4'
+        poster='images/opening-preview.png'
         ref={videoRef}
         onEnded={() => setCurrentStage(STAGE.INTERACTIVE_MAP)}
       />
