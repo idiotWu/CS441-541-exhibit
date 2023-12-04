@@ -54,7 +54,7 @@ export function Opening() {
       </FullscreenVideo>
 
       {!showOverlay && (
-        <BottomNav>
+        <BottomNav threshold={0}>
           <div className={styles.nav}>
             <Fab
               variant='extended'

@@ -5,10 +5,11 @@ import styles from './bottom-nav.module.scss';
 
 export type NavProps = {
   alwaysShow?: boolean;
+  threshold?: number;
   children: React.ReactNode;
 };
 
-export function BottomNav({ alwaysShow, children }: NavProps) {
+export function BottomNav({ alwaysShow, threshold = 0.8, children }: NavProps) {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -18,12 +19,12 @@ export function BottomNav({ alwaysShow, children }: NavProps) {
       clearTimeout(timer);
 
       // show navbar when tapping the bottom 20% of the window
-      if (clientY < window.innerHeight * 0.8) {
+      if (clientY < window.innerHeight * threshold) {
         setShow(false);
         return;
       }
 
-      setShow(true);
+      setShow(s => !s);
 
       timer = window.setTimeout(() => {
         setShow(false);
@@ -36,7 +37,7 @@ export function BottomNav({ alwaysShow, children }: NavProps) {
       document.removeEventListener('pointerdown', onPointerDown);
       clearTimeout(timer);
     };
-  }, []);
+  }, [threshold]);
 
   return (
     <nav

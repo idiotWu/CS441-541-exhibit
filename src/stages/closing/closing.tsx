@@ -29,7 +29,7 @@ export function Closing() {
         ></track>
       </FullscreenVideo>
 
-      <BottomNav alwaysShow={showNav}>
+      <BottomNav alwaysShow={showNav} threshold={0}>
         <div className={styles.nav}>
           <Fab
             variant='extended'
