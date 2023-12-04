@@ -52,7 +52,7 @@
 .sidebar {
   padding-left: 20px;
   // flex: 1 0 200px;
-  width: 200px;
+  width: 250px;
   border-left: 1px solid #ccc;
 }
 
@@ -66,9 +66,23 @@
 }
 
 .event-description {
+  max-height: 60dvh;
+  overflow: auto;
+
   ul {
     padding: 0;
     list-style: none;
+  }
+
+  li p {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    max-width: 150px;
   }
 
   .youtube-link {

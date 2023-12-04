@@ -40,8 +40,11 @@ Join the SCHR for a discussion with formerly incarcerated leaders about ending m
 
 **Check out our interviews with SCHR members:**
 
-- [Waleisah S. Wilson](https://youtu.be/j8GkJsJMpdY)
-- [Tanika L. Nicholas](https://youtu.be/TbQ_JLHtHAk)
+- ![Waleisah S. Wilson](images/interview-wilson.png)
+  [Waleisah S. Wilson](https://youtu.be/j8GkJsJMpdY)
+
+- ![Tanika L. Nicholas](images/interview-nicholas.png)
+  [Tanika L. Nicholas](https://youtu.be/TbQ_JLHtHAk)
 `,
     longitude: -84.39086765190947,
     latitude: 33.75612914677257,
