@@ -32,7 +32,6 @@
 
 .modal-content {
   display: flex;
-  flex: 1;
   overflow: hidden;
 }
 
@@ -71,8 +70,42 @@
 }
 
 .event-description {
+  flex: 1;
+  margin: 10px 0;
   max-height: 100%;
   overflow: auto;
+  // scroll shadow, see https://css-tricks.com/books/greatest-css-tricks/scroll-shadows/
+  background:
+    /* Shadow Cover TOP */
+    linear-gradient(white 30%, rgba(255, 255, 255, 0)) center top,
+    /* Shadow Cover BOTTOM */ linear-gradient(rgba(255, 255, 255, 0), white 70%)
+      center bottom,
+    /* Shadow TOP */
+      radial-gradient(
+        farthest-side at 50% 0,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0)
+      )
+      center top,
+    /* Shadow BOTTOM */
+      radial-gradient(
+        farthest-side at 50% 100%,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0)
+      )
+      center bottom;
+
+  background-repeat: no-repeat;
+  background-size:
+    100% 40px,
+    100% 40px,
+    100% 14px,
+    100% 14px;
+  background-attachment: local, local, scroll, scroll;
+
+  & :first-child {
+    margin-top: 0;
+  }
 
   ul {
     padding: 0;
@@ -97,7 +130,20 @@
   }
 }
 
-.register-button {
-  width: 100%;
-  letter-spacing: 0.15em !important;
+.register {
+  // border-top: 1px solid #eee;
+  position: relative;
+  text-align: center;
+  // margin-top: 10px;
+
+  h4 {
+    margin: 10px 0;
+    color: #1976d2;
+    text-transform: uppercase;
+  }
+
+  img {
+    display: inline-block;
+    margin-top: 10px;
+  }
 }

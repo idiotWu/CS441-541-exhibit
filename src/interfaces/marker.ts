@@ -5,6 +5,7 @@ export type EventMarker = {
   caption: string;
   organization: string;
   url: string;
+  qrCode: string;
   description: string;
   longitude: number;
   latitude: number;

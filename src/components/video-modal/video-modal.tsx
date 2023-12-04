@@ -1,6 +1,7 @@
 import { Modal, Button, Link } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import Popover from '@mui/material/Popover';
 import Markdown from 'react-markdown';
 import { useAtom } from 'jotai';
 import { useState, useCallback, useEffect } from 'react';
@@ -12,6 +13,8 @@ export function VideoModal() {
   const [activeMarker, setActiveMarker] = useAtom(activeMarkerAtom);
   const [, setViewedVideos] = useAtom(viewedVideosAtom);
   const [open, setOpen] = useState(activeMarker !== null);
+  const [openQRCode, setOpenQRCode] = useState(false);
+  const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
 
   const handleClose = useCallback(() => {
     setOpen(false);
@@ -71,15 +74,14 @@ export function VideoModal() {
             >
               {activeMarker?.description}
             </Markdown>
-            {/* @ts-expect-error: target property does exist */}
-            <Button
-              className={styles.registerButton}
-              href={activeMarker?.url}
-              variant='contained'
-              target='_blank'
-            >
-              I'm in!
-            </Button>
+            <div className={styles.register}>
+              <img
+                src={activeMarker?.qrCode}
+                alt='Scan the QR Code to join the event!'
+                width={200}
+              />
+              <h4>Scan to join the event!</h4>
+            </div>
           </aside>
         </div>
       </div>
