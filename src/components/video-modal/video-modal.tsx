@@ -1,7 +1,6 @@
-import { Modal, Button, Link } from '@mui/material';
+import { Modal, Link } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-import Popover from '@mui/material/Popover';
 import Markdown from 'react-markdown';
 import { useAtom } from 'jotai';
 import { useState, useCallback, useEffect } from 'react';
@@ -13,8 +12,6 @@ export function VideoModal() {
   const [activeMarker, setActiveMarker] = useAtom(activeMarkerAtom);
   const [, setViewedVideos] = useAtom(viewedVideosAtom);
   const [open, setOpen] = useState(activeMarker !== null);
-  const [openQRCode, setOpenQRCode] = useState(false);
-  const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
 
   const handleClose = useCallback(() => {
     setOpen(false);
