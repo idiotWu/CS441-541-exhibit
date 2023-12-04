@@ -41,13 +41,13 @@ DSA is a volunteer group with many different programs. We campaign to win reform
     description: `
 Join the SCHR for a discussion with formerly incarcerated leaders about ending mass incarceration, the importance of centering the voices, experiences, and leadership of formerly incarcerated people, and the critical need to prioritize ending the mass incarceration of women and girls.
 
-**Check out our interviews with SCHR members:**
+**Scan the QR Codes below to view  our interviews with SCHR members:**
 
 - ![Waleisah S. Wilson](images/interview-wilson.png)
-  [Waleisah S. Wilson](https://youtu.be/j8GkJsJMpdY)
+  Waleisah S. Wilson
 
 - ![Tanika L. Nicholas](images/interview-nicholas.png)
-  [Tanika L. Nicholas](https://youtu.be/TbQ_JLHtHAk)
+  Tanika L. Nicholas
 `,
     longitude: -84.39086765190947,
     latitude: 33.75612914677257,
